@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html>
+  <header>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example page</title>
+  </header>
+  <body>
+    <script>
+      req = new XMLHttpRequest();
+      req.open("GET", "https://photorankapi-a.akamaihd.net/customers/215757/media/recent?auth_token=0a40a13fd9d531110b4d6515ef0d6c529acdb59e81194132356a1b8903790c18&version=v2.0", false);
+      req.send();
+      jres = JSON.parse(req.responseText);
+      var embedded = jres.data._embedded;
+      console.log(embedded)
+      for (var key in embedded) {
+        var image = embedded[key].images.square
+        console.log(image);
+      }
+
+    </script>
+  </body>
+</html>
