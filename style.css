@@ -1,0 +1,9 @@
+.carousel_container_flex{
+  display: flex;
+  justify-content: space-around;
+}
+.carousel_pic{
+  border: 1px red solid;
+  height: 100px;
+  width: 100px;
+}
