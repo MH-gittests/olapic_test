@@ -3,11 +3,11 @@ $(function(){
   $('.carousel.carousel-slider').carousel({full_width: true, indicators: true});
 
   $('.arrow-right').click(function(){
-    console.log("click");
+    $('.carousel').carousel('next');
   })
 
   $('.arrow-left').click(function(){
-    console.log("left")
+    $('.carousel').carousel('prev');
   })
   //make api request
   $.ajax({url:"https://photorankapi-a.akamaihd.net/customers/215757/media/recent?auth_token=0a40a13fd9d531110b4d6515ef0d6c529acdb59e81194132356a1b8903790c18&version=v2.0", success: function(result){

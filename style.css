@@ -23,6 +23,18 @@ li.carousel .indicators .indicator-item.active{
 li.carousel .indicators .indicator-item{
  background-color: #7c7c7c;
 }
+
+.btn-arrow{
+/* remove !important */
+  position: absolute !important;
+}
+.btn-arrow-left{
+    left: 43%
+}
+
+.btn-arrow-right{
+  right: 43%;
+}
 @media() {
 
 }
