@@ -20,33 +20,28 @@
     <!-- setup modal for triggering on click of photo -->
 
     <div class="carousel carousel-slider center"  data-indicators="true">
-      <div class="carousel-item white black-text" id="#one!" href="#one!">
-        <h2>
-          Panel
-        </h2>
-        <div class="carousel_container_flex">
+      <div class="carousel-fixed-item center">
+
+        <img src="svg/arrow-circle-left.svg" class="arrow arrow-left" alt="Left arrow">
+        <img src="svg/arrow-circle-right.svg" class="arrow arrow-right" alt="Right arrow">
+      </div>
+
+      <div class="carousel-item light-blue lighten-3"  href="#one!">
+        <div class="carousel_container_flex" id="carousel_container_one">
 
         </div>
       </div>
-      <div class="carousel-item white black-text" id="#two!" href="#two!">
+      <div class="carousel-item light-blue lighten-3"  href="#two!">
+        <div class="carousel_container_flex" id="carousel_container_two">
 
+        </div>
+      </div>
+      <div class="carousel-item light-blue lighten-3"  href="#three!">
+        <div class="carousel_container_flex" id="carousel_container_three">
+
+        </div>
       </div>
     </div>
 
-    <script>
-      /*
-      req = new XMLHttpRequest();
-      req.open("GET", "https://photorankapi-a.akamaihd.net/customers/215757/media/recent?auth_token=0a40a13fd9d531110b4d6515ef0d6c529acdb59e81194132356a1b8903790c18&version=v2.0", false);
-      req.send();
-      jres = JSON.parse(req.responseText);
-      var embedded = jres.data._embedded;
-      console.log(embedded)
-      for (var key in embedded) {
-        var image = embedded[key].images.square
-        console.log(image);
-
-      }*/
-
-    </script>
   </body>
 </html>

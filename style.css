@@ -1,9 +1,28 @@
 .carousel_container_flex{
   display: flex;
   justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 .carousel_pic{
   border: 1px red solid;
   height: 100px;
   width: 100px;
+}
+.carousel .card .card-image img {
+  height: 180px;
+  width: 180px;
+}
+.arrow{
+  height: 25px;
+  width: 25px;
+}
+li.carousel .indicators .indicator-item.active{
+  background-color: black;
+}
+li.carousel .indicators .indicator-item{
+ background-color: #7c7c7c;
+}
+@media() {
+
 }
