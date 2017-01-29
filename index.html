@@ -16,13 +16,22 @@
 	<title>Example page</title>
   </header>
   <body>
-
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <img class="modal-class" />
+        <p class="modal-text">A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
     <!-- setup modal for triggering on click of photo -->
 
     <div class="carousel carousel-slider center"  data-indicators="true">
       <div class="carousel-fixed-item center">
-        <a class="btn-floating btn-large btn-arrow btn-arrow-left waves-effect waves-light white"><img src="svg/arrow-circle-left.svg" class="arrow arrow-left" alt="Left arrow"></a>
-        <a class="btn-floating btn-large btn-arrow btn-arrow-right aves-effect waves-light white"><img src="svg/arrow-circle-right.svg" class="arrow arrow-right" alt="Right arrow"></a>
+        <a class="btn-arrow btn-arrow-left"><img src="svg/chevron-left.svg" class="arrow arrow-left" alt="Left arrow" ></a>
+        <a class="btn-arrow btn-arrow-right"><img src="svg/chevron-right.svg" class="arrow arrow-right" alt="Right arrow"></a>
       </div>
 
       <div class="carousel-item light-blue lighten-3"  href="#one!">
