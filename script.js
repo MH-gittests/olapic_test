@@ -1,7 +1,7 @@
 $(function(){
   //set up materialize carousel
   $('.carousel.carousel-slider').carousel({full_width: true, indicators: true});
-
+  //set up click functions
   $('.arrow-right').click(function(){
     $('.carousel').carousel('next');
   })
@@ -10,32 +10,27 @@ $(function(){
     $('.carousel').carousel('prev');
   })
 
-  //add in the modal on click
-  /*
-    $('.card-image').on('click'){
-
-  }
-  */
   var embedded
   //make api request
-  // % isolate the variables for use and auth before call to make code more re-usable
+  // isolate the variables for use and auth before call to make code more re-usable
   var customerID  = "215757"
   var auth = "?auth_token=0a40a13fd9d531110b4d6515ef0d6c529acdb59e81194132356a1b8903790c18&version=v2.0"
   var mediaQuery = "media/recent"
   var QueryUrl = "https://photorankapi-a.akamaihd.net/customers/" + customerID + "/" + mediaQuery + auth;
 
 
-var users = [];
-//  $.ajax({url:"https://photorankapi-a.akamaihd.net/customers/215757"})
+// unused user variable var users = [];
+
+//get media
 var request = $.ajax({url:QueryUrl, success: function(result){
      return embedded = result.data._embedded;
 
-
-
-
-
   }});
-function setPics(mediaJSON){
+
+
+// set up cards
+
+function setCards(mediaJSON){
 
   for(var key in mediaJSON){
     var image = mediaJSON[key].images.thumbnail + auth
@@ -65,7 +60,7 @@ function setPics(mediaJSON){
   }
 }
 
-/*
+/* function to getUsers to add in their name on the page
 function getUsers(Json){
   for (key in Json){
   var sourceID = Json[key]._embedded.uploader._links.self.href
@@ -77,9 +72,11 @@ function getUsers(Json){
   }})
 
 }} */
+
+//trigger functions after the JSON data is returned
 request.done(function(){
     //getUsers(embedded);
-    setPics(embedded);
+    setCards(embedded);
 })
 
 })
