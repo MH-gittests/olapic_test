@@ -33,11 +33,10 @@ var request = $.ajax({url:QueryUrl, success: function(result){
 function setCards(mediaJSON){
 
   for(var key in mediaJSON){
-    var image = mediaJSON[key].images.thumbnail + auth
+    var image = mediaJSON[key].images.thumbnail + auth;
     var words = mediaJSON[key].caption;
     words = words.slice(0,140);
-    words = words + '...'
-    console.log(words);
+    words = words + '...';
     var userIndex = (Number(key))
       var htm = '<div class="card">' +
                       '<div class="card-image">' +
@@ -46,7 +45,7 @@ function setCards(mediaJSON){
                       //to add in username  '<span class="card-title></span>' +
                       '<div class="card-content">' +  words + ' </div>'
 
-                '</div>'
+                '</div>';
 
       if(key < 6){
           $("#carousel_container_one").append(htm);
