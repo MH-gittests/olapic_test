@@ -3,7 +3,9 @@
 ##Design
 For the purpose of this exercise, I decided to mainly stick within the guidelines of material design by google. This was used due to the lack of any style guidelines of branding principles. I kept the design very light, as this would allow customers to feedback further (which I would have normally gained through wireframe and design processes). The only design styles I have inferred is the use of material design and that the customers primary colour is light blue 3 (as defined in materialize).
 
-I used some of the text from the API as a lead for the users to want to read more/find out more about the product.
+I decided to put the navigation buttons at the bottom as they looked too cluttered elsewhere, and I wanted to give priority of screen space to the images. Following on from this going live I would monitor to see whether people were clicking through, whether there was a need to move the nav buttons or add auto scrolling.
+
+I used the related instagram text from the API as a lead for the users to want to read more/find out more about the product.
 
 I ran out of time on wanting to have the user name displayed on the card to give credibility.
 
