@@ -27,7 +27,7 @@ If this was a recurring customer need I would change the way I approached this t
 Given more time, I would have liked to implement this in vanilla JavaScript to ensure that the code is more re-usable and has less dependencies. This would also facilitate using more functional programming principles to ensure scope and variable integrity.
 I would have also like to use ES6 template strings and arrow functions, but was unsure of their implementation within JQuery so avoided it.
 I chose to use JQuery and materialize due to time constraints, however due to how long it's been since I used easier if I was to do it again I would use
-I used CDNs due to issues with npm, that I haven't had a chance to fix, this I would change.
+I used CDNs due to ease of use for those viewing, and reducing any npm packages they would need to download.
 I didn't stick as much as I should to any CSS naming principles.
 
 
